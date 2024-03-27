@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 City Report
+  table
+    thead
+      tr
+        th Name
+        th Country
+        th District
+        th Population
+    tbody
+      each city in cities
+        tr
+          td= city.Name
+          td= city.Country
+          td= city.District
+          td= city.Population

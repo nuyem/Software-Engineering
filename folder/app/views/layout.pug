@@ -1,0 +1,11 @@
+html
+  head 
+    link(rel="stylesheet", href="/static/style.css")
+    title My Cat Website 
+    block head 
+  body 
+    .layout 
+      .layout-nav 
+        include mixins/nav  // Including nav.pug from the mixins folder
+      .layout-content 
+        block content

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 Population Report
+  table
+    thead
+      tr
+        th Name
+        th Total Population
+        th Population in Cities (%)
+        th Population not in Cities (%)
+    tbody
+      each report in populationReports
+        tr
+          td= report.Name
+          td= report.TotalPopulation
+          td= report.PopulationInCities
+          td= report.PopulationNotInCities
