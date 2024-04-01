@@ -1,0 +1,68 @@
+/* Base Settings */
+html, body {
+  font-size: 15px; /* Slightly larger base font size for better readability */
+  font-family: "Helvetica Neue", Arial, sans-serif; /* A more modern, sans-serif font family */
+  background-color: #f0f0f0; /* A softer shade of gray for the background */
+  color: #333; /* Darker text for better contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure consistent box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px; /* Slightly narrower for a more centered look */
+  margin: auto;
+  padding: 1rem 2rem; /* Increased padding for better spacing */
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: bold; /* Adding weight for emphasis */
+  color: #1976d2; /* A vibrant blue for heading to add a pop of color */
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Reduced bottom margin for tighter grouping */
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger for more impact */
+}
+
+h2 {
+  font-size: 2rem; /* Distinct but not as large as h1 */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* More space between navigation items */
+  padding: 1.5rem 0; /* More vertical padding for a taller nav bar */
+  background-color: #ffffff; /* A clean white background for the nav */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+nav a {
+  color: #555; /* Darker grey for better readability */
+  text-decoration: none;
+  font-weight: 500; /* Medium font weight for a semi-bold look */
+}
+
+nav a:hover {
+  color: #1976d2; /* Match hover color with the heading color for consistency */
+  text-decoration: underline; /* Underline on hover for clear interactivity */
+}
+
+/* Content Area */
+.content-area {
+  padding: 2rem 0; /* More padding for a spacious layout */
+  background-color: #ffffff; /* White background for content to stand out */
+  border-radius: 8px; /* Rounded corners for a modern, soft look */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Adding shadow for depth and focus */
+}
