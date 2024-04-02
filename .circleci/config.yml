@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   build:
-    working_directory: ~/Software-Engineering/folder
+    working_directory: ~/Software-Engineering/check
     docker:
       - image: cimg/node:lts
     steps:
