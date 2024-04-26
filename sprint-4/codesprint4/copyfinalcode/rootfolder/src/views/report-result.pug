@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  if data && data.length
+    table
+      thead
+        tr
+          th Code
+          th Name
+          th Continent
+          th Region
+          th Population
+          th Capital
+      tbody
+        each item in data
+          tr
+            td= item.code
+            td= item.name
+            td= item.continent
+            td= item.region
+            td= item.population
+            td= item.capital
+  else
+    p No data found.

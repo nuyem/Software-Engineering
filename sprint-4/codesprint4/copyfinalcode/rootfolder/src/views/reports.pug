@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Generate a Report
+  form(action='/generate-report', method='GET')
+    label(for='reportType') Select a report:
+    select(name='reportType')
+      option(value='country-report') Country Report
+      option(value='city-report') City Report
+      option(value='capital-city-report') Capital City Report
+      // Add other options for different reports as needed
+    input(type='submit', value='Generate Report')

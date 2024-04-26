@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1 Cities
+  if cities && cities.length
+    table
+      thead
+        tr
+          th Code
+          th Name
+          th Continent
+          th Region
+          th Population
+          th Capital
+      tbody
+        each city in cities
+          tr
+            td= city.code
+            td= city.name
+            td= city.continent
+            td= city.region
+            td= city.population
+            td= city.capital
+  else
+    p No cities found.
+extends layout
+
